@@ -18,7 +18,8 @@ import config from "./config";
 // See https://aka.ms/about-bot-adapter to learn more about adapters.
 const credentialsFactory = new ConfigurationServiceClientCredentialFactory({
   MicrosoftAppId: config.botId,
-  MicrosoftAppPassword: config.botPassword,
+  CertificatePrivateKey: 'your cert key',
+  CertificateThumbprint: 'your cert thumbprint',
   MicrosoftAppType: "MultiTenant",
 });
 
